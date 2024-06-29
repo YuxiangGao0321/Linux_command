@@ -10,9 +10,14 @@ Delete dictionary
 rm -r dic_name
 ```
 
-Latest FEniCS in Docker
+Latest FEniCS in Docker (Linux/MacOS)
 ```bash
 docker run -ti -p 127.0.0.1:8000:8000 -v $(pwd):/home/fenics/shared -w /home/fenics/shared quay.io/fenicsproject/stable:current
+```
+
+Latest FEniCS in Docker (Windows)
+```bash
+docker run -ti -p 127.0.0.1:8000:8000 -v %cd%:/home/fenics/shared -w /home/fenics/shared quay.io/fenicsproject/stable:2016.2.0
 ```
 
 Gmsh install
